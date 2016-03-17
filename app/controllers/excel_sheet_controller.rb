@@ -143,11 +143,11 @@ class ExcelSheetController < ApplicationController
 	
 		headers=Hash.new
 
-		headers[params[:task_column]]="Task"
+		headers[params[:task_column]]="Task Title"
 		headers[params[:task_description_column]]="Task Description"
 		headers[params[:average_hour_column]]="Average Hours"
-		headers[params[:start_date_column]]="Start Date(yyyy-MM-dd)"
-		headers[params[:end_date_column]]= "End Date(yyyy-MM-dd)"
+		headers[params[:start_date_column]]="Start Date (yyyy-MM-dd)"
+		headers[params[:end_date_column]]= "End Date (yyyy-MM-dd)"
 		headers[params[:asignee_name_column]]= "Asignee"
 
 		column_headers=Array.new
